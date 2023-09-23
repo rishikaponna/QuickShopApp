@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "319916209225",
+    "project_id": "quickshop-7211f",
+    "storage_bucket": "quickshop-7211f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319916209225:android:956ea7300803da9583bb98",
+        "android_client_info": {
+          "package_name": "com.example.quickshopapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319916209225-k140qibmbio698mo840cdv2tcgfrdbm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDumnt3FTd5RO1CuwbVRuPN7zUXQKqzLpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319916209225-k140qibmbio698mo840cdv2tcgfrdbm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

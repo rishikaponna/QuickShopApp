@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.example.quickshopapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.quickshopapp"
+        minSdk 26
+        minSdkVersion 19
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.0-alpha01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.0-alpha01'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+
+    //slider view
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //menu drawer
+    implementation group: 'com.google.android.material', name: 'material', version: '1.11.0-alpha01'
+
+    //circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.code.gson:gson:2.8.9' // Use the latest version of Gson
+
+
+
+
+    //firebase recycler adapter
+    implementation 'com.firebaseui:firebase-ui-database:6.0.2'
+
+    //razorpay
+    implementation 'com.razorpay:checkout:1.6.17'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.6.0-alpha01'
+
+    //biometric
+    implementation 'androidx.biometric:biometric:1.1.0'
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+
